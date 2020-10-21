@@ -20,6 +20,6 @@ npm install inquirer
 
 
 ## License
-Good README Generator is licensed undther the [MIT](https://choosealicense.com/licenses/mit/).
+Good README Generator is licensed under the [MIT](https://choosealicense.com/licenses/mit/).
 
 Copyright &#169; 2020, Garman Kwan
