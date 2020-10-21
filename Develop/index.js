@@ -2,6 +2,7 @@ const fs = require( 'fs' )
 const inquirer = require( 'inquirer' );
 const Choices = require('inquirer/lib/objects/choices');
 
+
 // array of questions for user
 const questions = [
     {
@@ -28,7 +29,7 @@ const questions = [
         type: 'list',
         name: 'license',
         message: 'Choose your License:',
-        choices: ['MIT','GNU GPL v3']
+        choices: ['MIT','GPLv3', 'Apache', 'ISC']
     },
     {
         type: 'input',
@@ -52,45 +53,36 @@ const questions = [
     }
 
 ];
-// function to write README file
-// function writeToFile(fileName, data) {
-//     fs.writeFileSync( 'CONTRIBUTORS.md',
-//     `------------------------------------------
-// #${questions.title}
 
-// ${questions.desc}` )
-// }
 
 // function to initialize program
 async function init() {
     const setup = await inquirer.prompt(questions);
-    if (setup.license == 'MIT'){
-        const pick = 'MIT License';
-    }
-    else{
-        const pick = 'GNU GPL v3';
-    }
-    console.log(
-        `#${setup.title}\n${setup.desc}\n`+
-        `##Installation\n${setup.inst}\n`+
-        `##Usage\n${setup.usage}\n`+
-        `##License\n${setup.license}\n`+
-        `##Contributing\n${setup.contr}\n`+
-        `##Tests\n${setup.tests}\n`+
-        `##Questions\n<https://github.com/${setup.github}>\nReach me with additional questions at: <${setup.email}>`
+
+// write README file
+     fs.writeFileSync('GOODREADME.md',
+        `# ${setup.title}\n`+
+        `![License](https://img.shields.io/badge/license-${setup.license}-blue.svg "License Badge")\n`+
+        `## Description\n${setup.desc}\n`+
+        `## Table of Contents\n`+
+
+        `- [Installation](#installation)\n`+
+        `- [Usage](#usage)\n`+
+        `- [License](#license)\n`+
+        `- [Contributing](#Contributing)\n`+
+        `- [Tests](#tests)\n`+
+        `- [Questions](#questions)\n`+
+        
+        `## Installation\n${setup.inst}\n`+
+        `## Usage\n${setup.usage}\n`+
+        `## License\nCopyright, 2020, Garman Kwan\n`+
+        `\n${setup.license}:\nFor more information on license and use, please visit: <https://opensource.org/licenses/category>\n`+
+        `## Contributing\n${setup.contr}\n`+
+        `## Tests\n${setup.tests}\n`+
+        `## Questions\nVisit my [GitHub](https://github.com/${setup.github}) page or send your questions by email: <${setup.email}>`
     );
 
 }
 
 // function call to initialize program
 init();
-
-// Title
-// Description
-// Table of Contents
-// Installation
-// Usage
-// License
-// Contributing
-// Tests
-// Questions
