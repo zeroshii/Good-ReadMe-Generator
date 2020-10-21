@@ -4,6 +4,10 @@
 A command-line application that dynamically generates a professional README.md from user input using Node.js and the Inquirer package.
 Please see: [video demo](https://drive.google.com/file/d/1rusqGflE4pAzd_AgTzleP_oM3dLBgiWO/view?usp=sharing)
 
+![Git Bash screenshot](https://github.com/zeroshii/Good-ReadMe-Generator/blob/main/git-screenshot.png)
+
+![README demo screenshot](https://github.com/zeroshii/Good-ReadMe-Generator/blob/main/readme-screenshot.png)
+
 ## Technologies
 - JavaScript
 - Node.js
