@@ -1,7 +1,7 @@
-# 1
-![License](https://img.shields.io/badge/license-MIT-blue.svg "License Badge")
+# My Project
+![License](https://img.shields.io/badge/license-GPLv3-blue.svg "License Badge")
 ## Description
-1
+Here is the description of my project.
 ## Table of Contents
 - [Installation](#installation)
 - [Usage](#usage)
@@ -10,17 +10,17 @@
 - [Tests](#tests)
 - [Questions](#questions)
 ## Installation
-1
+You will need to install these packages.
 ## Usage
-1
+Here are some usage notes.
 ## License
 Copyright, 2020, Garman Kwan
 
-MIT:
+GPLv3:
 For more information on license and use, please visit: <https://opensource.org/licenses/category>
 ## Contributing
-1
+John Smith
 ## Tests
-1
+Test notes go here.
 ## Questions
-Visit my [GitHub](https://github.com/1) page or send your questions by email: <1>
+Visit my [GitHub](https://github.com/zeroshii) page or send your questions by email: <myname@email.com>
